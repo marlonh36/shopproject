@@ -106,9 +106,10 @@ function inject(item) {
   container.insertAdjacentHTML(
     "beforeend",
     `<div class="card">
-        <h2 class="card-header">${item.item}</h2>
-        <img src="${item.item}.png" alt="" />
-        <p>${item.price}</p>
+        <h2 class="card-title">${item.item}</h2>
+        <img class= "card-img" src="${item.item}.png" alt="" />
+        <p> $${item.price}</p>
+        <button class="card-btn">Add to cart</button>
       </div> `,
   );
 }
