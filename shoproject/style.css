@@ -79,6 +79,9 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     flex-direction: column;
     justify-content:space-around ;
     align-items: center;
+    height:50rem;
+    width: 21%;
+    margin: 5rem auto;
 }
 .card-title {
     margin: 0;
