@@ -62,7 +62,7 @@ div {
 }
 .hero p{
 font-size: 2.4rem;
-margin-bottom: 3rem;
+margin-bottom: 0rem;
 text-shadow: 0 2px 6px rgba(0,0,0,0.4);
  text-align: center
 }
@@ -102,7 +102,7 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 .card-btn {
     height: 8rem;
     width: 20rem;
-    padding: rem;
+    padding: 1rem;
     background-color: #5bffe9;
     color: #000000;
     border: 3px solid #006c70;
