@@ -109,7 +109,7 @@ function inject(item) {
         <h2 class="card-title">${item.item}</h2>
         <img class= "card-img" src="${item.item}.png" alt="" />
         <p> $${item.price}</p>
-        <button class="card-btn">Add to cart</button>
+        <button id="btn" class="card-btn">Add to cart</button>
       </div> `,
   );
 }
@@ -141,12 +141,31 @@ addtotalprice()
 /* removecart(items[3]) */
 
 for(let i = 0; i<=20; i++){
-inject(items[i])
+/* inject(items[i]) */
 }
 
 console.log(cart)
 console.log(totalprice)
 
 
+btn.addEventListener("click", function () {
+  x++;
+  rgb();
+});
+
+//make 1 html card, comment it out
+//select the container
+//forEach on items to inject to screen
+//select add cart buttons
+
+
+//make sure to use a class instead
+const buttons = document.querySelectorAll("button");
+console.log(buttons);
+buttons.forEach((button) =>
+button.addEventListener("click", function (event) {
+  console.log(event.target.closest(".card").getAttribute("data-item"));
+}),
+);
 
 
