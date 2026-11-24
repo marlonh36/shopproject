@@ -112,13 +112,7 @@ btn.addEventListener("click", function () {
 
 
 //make sure to use a class instead
-const buttons = document.querySelectorAll("button");
-console.log(buttons);
-buttons.forEach((button) =>
-button.addEventListener("click", function (event) {
-  console.log(event.target.closest(".card").getAttribute("data-item"));
-}),
-);
+
 
 function inject(item) {
   const container = document.querySelector(".container");
@@ -131,6 +125,14 @@ function inject(item) {
         <button id="btn" class="card-btn">Add to cart</button>
       </div> `,
   );
+    const buttons = document.querySelectorAll("button");
+console.log(buttons);
+buttons.forEach((button) =>
+button.addEventListener("click", function (event) {
+  console.log(event.target.closest(".card").getAttribute("data-item"));
+}),
+);
+
 }
 
 const cart = []
@@ -162,7 +164,7 @@ addtotalprice()
 for(let i = 0; i<=20; i++){
 inject(items[i])
 }
-
+console.log(i)
 console.log(cart)
 console.log(totalprice)
 
