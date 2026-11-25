@@ -1,101 +1,101 @@
 const items = [
     {
-        item: "shirt",
+        name: "shirt",
         category: "clothing",
         price: 10
     },
     {
-        item: "pants",
+        name: "pants",
         category: "clothing",
         price: 20
     },
     {
-        item: "socks",
+        name: "socks",
         category: "clothing",
         price: 5 
     },
     {
-        item: "underwear",
+        name: "underwear",
         category: "clothing",
         price: 5 
     },
     {
-        item: "wallet",
+        name: "wallet",
         category: "storage",
         price: 7 
     },
     {
-        item: "backpack",
+        name: "backpack",
         category: "storage",
         price: 30
     },
     {
-        item: "purse",
+        name: "purse",
         category: "storage",
         price: 50
     },
     {
-        item: "fanny pack",
+        name: "fanny pack",
         category: "storage",
         price: 30 
     },
     {
-        item: "sunglasses",
+        name: "sunglasses",
         category: "accessories",
         price: 100 
     },
     {
-        item: "watch",
+        name: "watch",
         category: "accessories",
         price: 500
     },
     {
-        item: "bracelet",
+        name: "bracelet",
         category: "accessories",
         price: 1000
     },
     {
-        item: "necklace",
+        name: "necklace",
         category: "accessories",
         price: 2000 
     },
     {
-        item: "beanie",
+        name: "beanie",
         category: "winter",
         price: 6 
     },
     {
-        item: "earmuffs",
+        name: "earmuffs",
         category: "winter",
         price: 12 
     },
     {
-        item: "scarf",
+        name: "scarf",
         category: "winter",
         price: 6 
     },
     {
-        item: "gloves",
+        name: "gloves",
         category: "winter",
         price: 6
     },
     {
-        item: "sneakers",
+        name: "sneakers",
         category: "footwear",
         price: 80 
     },
     {
-        item: "crocs",
+        name: "crocs",
         category: "footwear",
         price: 60 
     },
     {
-        item: "boots",
+        name: "boots",
         category: "footwear",
         price: 150 
     },
     {
-        item: "sandals",
+        name: "sandals",
         category: "footwear",
         price: 25 
     },
@@ -118,9 +118,9 @@ function inject(item) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "beforeend",
-    `<div class="card" data-item="${item.item}">
-        <h2 class="card-title">${item.item}</h2>
-        <img class= "card-img" src="${item.item}.png" alt="" />
+    `<div class="card" data-item="${item.name}">
+        <h2 class="card-title">${item.name}</h2>
+        <img class= "card-img" src="${item.name}.png" alt="" />
         <p> $${item.price}</p>
         <button id="btn" class="card-btn">Add to cart</button>
       </div> `,
